@@ -97,6 +97,20 @@ body span {
     display: none;
   }
 }
+.header .header_Button .connect {
+  text-decoration: none;
+  color: black;
+}
+.header .header_Button .connect:hover {
+  color: #2f63f4;
+}
+.header .header_Button .inscrit {
+  text-decoration: none;
+  color: white;
+}
+.header .header_Button .inscrit:hover {
+  color: #2f63f4;
+}
 .header .header_Button button {
   text-decoration: none;
   border: none;
@@ -910,6 +924,206 @@ hr {
 }
 @media screen and (max-width: 1220px) {
   .homeContact .homeContact_rightPart button {
+    width: 100%;
+    padding: 1rem 20px;
+    margin-top: 1vh;
+  }
+}
+
+.homeSignUp {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "leftArea rightArea";
+  padding: 4vh 0;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.homeSignUp img {
+  padding-top: 20%;
+  grid-area: rightArea;
+  width: 100%;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp img {
+    padding-top: 0;
+  }
+}
+.homeSignUp .homeSignUp_leftPart {
+  grid-area: leftArea;
+  color: #030303;
+  padding-left: 0%;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp .homeSignUp_leftPart {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+  }
+}
+.homeSignUp .homeSignUp_leftPart h2 {
+  font-family: "Poppins";
+  font-size: 75px;
+  line-height: 1em;
+  margin: 20px 20px 40px 0px;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp .homeSignUp_leftPart h2 {
+    font-size: 50px;
+    margin: 20px auto 40px auto;
+  }
+}
+.homeSignUp .homeSignUp_leftPart p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1em;
+}
+.homeSignUp .homeSignUp_leftPart form label {
+  font-family: "Poppins";
+}
+.homeSignUp .homeSignUp_leftPart form input {
+  font-family: "Poppins";
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 100% 100%;
+  grid-template-areas: "firstArea secondArea thirtArea";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: white;
+  border-radius: 12px;
+  width: 450px;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp .homeSignUp_leftPart form input {
+    width: 90%;
+    margin: 5px auto 20px auto;
+    padding: 1rem 12px;
+  }
+}
+.homeSignUp .homeSignUp_leftPart button {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 1rem;
+  color: white;
+  margin-top: 3vh;
+  cursor: pointer;
+  width: 480px;
+}
+.homeSignUp .homeSignUp_leftPart button:hover {
+  background-color: #ededed;
+  color: #2f63f4;
+}
+@media screen and (max-width: 1220px) {
+  .homeSignUp .homeSignUp_leftPart button {
+    width: 100%;
+    padding: 1rem 20px;
+    margin-top: 1vh;
+  }
+}
+
+.homeLogIn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "leftArea rightArea";
+  padding: 4vh 0;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.homeLogIn img {
+  padding-top: 20%;
+  grid-area: rightArea;
+  width: 100%;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn img {
+    padding-top: 0;
+  }
+}
+.homeLogIn .homeLogIn_leftPart {
+  grid-area: leftArea;
+  color: #030303;
+  padding-left: 0%;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn .homeLogIn_leftPart {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+  }
+}
+.homeLogIn .homeLogIn_leftPart h2 {
+  font-family: "Poppins";
+  font-size: 75px;
+  line-height: 1em;
+  margin: 20px 20px 40px 0px;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn .homeLogIn_leftPart h2 {
+    font-size: 50px;
+    margin: 20px auto 40px auto;
+  }
+}
+.homeLogIn .homeLogIn_leftPart p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1em;
+}
+.homeLogIn .homeLogIn_leftPart form label {
+  font-family: "Poppins";
+}
+.homeLogIn .homeLogIn_leftPart form input {
+  font-family: "Poppins";
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 100% 100%;
+  grid-template-areas: "firstArea secondArea thirtArea";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: white;
+  border-radius: 12px;
+  width: 450px;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn .homeLogIn_leftPart form input {
+    width: 90%;
+    margin: 5px auto 20px auto;
+    padding: 1rem 12px;
+  }
+}
+.homeLogIn .homeLogIn_leftPart button {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #2f63f4;
+  border-radius: 10px;
+  border: solid 1px #2f63f4;
+  padding: 1rem;
+  color: white;
+  margin-top: 3vh;
+  cursor: pointer;
+  width: 480px;
+}
+.homeLogIn .homeLogIn_leftPart button:hover {
+  background-color: #ededed;
+  color: #2f63f4;
+}
+@media screen and (max-width: 1220px) {
+  .homeLogIn .homeLogIn_leftPart button {
     width: 100%;
     padding: 1rem 20px;
     margin-top: 1vh;
